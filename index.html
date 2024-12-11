@@ -27,7 +27,8 @@
             display: flex;
             flex-direction: row;
             height: 90vh;
-            width: 100%;
+            border: 1px solid black;
+            margin-bottom: 10px;
         }
 
         .containers {
@@ -35,8 +36,11 @@
             padding: 5px;
         }
 
+        #titulo-chamativo {
+            text-align:  center;
+        }
+
         #imagens-de-vitrine {
-            width: 100%;
             border: 1px solid black;
             padding: 5px;
             height: 50vh;
@@ -50,6 +54,20 @@
             width: 2.5rem;
         }
 
+        #comentarios {
+            border: 1px solid black;
+            height: 40vh;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .comentario {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+
         footer {
             height: 20vh;
             width: 100%;
@@ -58,7 +76,7 @@
             justify-content: center;
             align-items: center;
             border: 1px solid black;
-            margin-top: 5px;
+            margin-top: 10px;
         }
     </style>
 
@@ -76,7 +94,7 @@
     </header>
     <main>
         <section id="lado-esquerdo" class="containers">
-            <h2>Irrigação automática</h2>
+            <h2 id="titulo-chamativo">Irrigação automática</h2>
             <h6>Introdução</h6>
             <p>
                 Alguns estudos indicam que o uso de sitemas de irrigação<br>
@@ -115,8 +133,11 @@
         </div>
     </section>
 
-    <section id="comentários">
-
+    <section id="comentarios">
+        <p class="comentario">Osmar Araujo: Uso o sistema a anos, nunca me decepcionou</p>
+        <p class="comentario">Iago Bortoluzzi: top!</p>
+        <p class="comentario">Pedro: Alves</p>
+        <P class="comentario">IguinPaivazzx7: Use meu código do kwai !!!</P>
     </section>
 
     <footer>
