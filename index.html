@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaPulse</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
         * {
             font-family: 'Times New Roman', Times, serif;
         }
@@ -19,6 +25,17 @@
             height: 10vh;
             border: 1px solid black;
             margin-bottom: 10px;
+        }
+
+        h1 {
+            /* font-family: "Sedgwick Ave", serif;
+            font-weight: 400;
+            font-style: normal; */
+            font-family: "JetBrains Mono", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: #008000;
         }
 
         a {
@@ -37,12 +54,15 @@
         .containers {
             width: 50%;
             padding: 5px;
+            border: 1px solid black;
+            margin: 5px;
         }
 
         #lado-direito {
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
 
         #titulo-chamativo {
@@ -110,23 +130,23 @@
     <header>
         <h1>AquaPulse</h1>
         <nav>
-            <a href="#home">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#serviços">Serviços</a>
-            <a href="#contato">Contato</a>
+            <a class="menu-link" href="#home">Início</a>
+            <a class="menu-link" href="#sobre">Sobre</a>
+            <a class="menu-link" href="#serviços">Serviços</a>
+            <a class="menu-link" href="#contato">Contato</a>
         </nav>
     </header>
     <main>
         <section id="lado-esquerdo" class="containers">
             <h2 id="titulo-chamativo">Irrigação automática</h2>
-            <h6>Introdução</h6>
+            <h5>Introdução</h5>
             <p>
                 Alguns estudos indicam que o uso de sitemas de irrigação<br>
                 automatizados,
                 baseados em sensores, pode aumentar a<br>
                 eficiência no uso da água em até 50%
             </p>
-            <h6>Objetivo</h6>
+            <h5>Objetivo</h5>
             <p>
                 O objetivo do nosso projeto é suprir
                 a necessidade de tecnologias<br> de automação
@@ -134,7 +154,7 @@
                 desenvolvemos um equipamento de irrigação automatizada,<br>
                 com sensores e válvulas.
             </p>
-            <h6>Considerações finais</h6>
+            <h5>Considerações finais</h5>
             <p>
                 Com a implementação bem sucedida do projeto, espera-se otimizar<br>
                 a tarefa de irrigação, reduzir posíveis erros que pode ser cometidos<br>
@@ -192,3 +212,7 @@
 </body>
 
 </html>
+
+<!--
+    2d3a3a <= color cinza
+-->
