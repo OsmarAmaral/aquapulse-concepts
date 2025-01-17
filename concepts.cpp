@@ -1,4 +1,4 @@
-// AquaPulse - Irrigação Automatica com Arduino
+// AquaPulse - Irrigação Automatica com Arduino, v1.0
 
 const int soilMoistureSensor = AO; /* Sensor de umidade*/
 const int button = 2; /* Botão */
