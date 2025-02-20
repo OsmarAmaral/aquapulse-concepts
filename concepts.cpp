@@ -1,6 +1,6 @@
 // AquaPulse - Irrigação Automatica com Arduino, v1.0
 
-const int soilMoistureSensor = AO; /* Sensor de umidade*/
+const int soilMoistureSensor = A0; /* Sensor de umidade */
 const int button = 2; /* Botão */
 const int waterPump = 3; /* Bomba de água */
 
@@ -18,11 +18,11 @@ void setup () {
 
 void loop () {
     int buttonState = digitalRead(button); /* leitura do botão */
-    Serial.printl("Button: "+buttonState);
+    Serial.println("Button: " + String(buttonState));
     if(buttonState == HIGH) {
         /* se estiver ligado */
-        int currentSoilMoisture = analogRead(soilMoistureSensor); /* leitura da umidade*/
-        Serial.printl("Umidade: "+currentSoilMoisture);
+        int currentSoilMoisture = analogRead(soilMoistureSensor); /* leitura da umidade */
+        Serial.println("Umidade: " + String(currentSoilMoisture));
         if(currentSoilMoisture < minimunSoilMoisture) {
             /* se ela for menor que a minima */
             digitalWrite(waterPump, HIGH); /* ative a bomba */
@@ -30,4 +30,5 @@ void loop () {
             digitalWrite(waterPump, LOW); /* desligue */
         }
     }
+    delay(500); /* pequeno atraso para evitar leituras excessivas */
 }
